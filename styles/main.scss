@@ -1,0 +1,93 @@
+
+// Import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// styles/main.scss
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+$color-principal: #5265E1;
+$color-secundari: #FA5959;
+$btn-padding: 0.5rem 2rem;
+
+@mixin items-style {
+    margin-left: 3rem;
+    font-size: 0.7rem;
+    
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-fluid{
+        margin: 2rem 5.5rem;
+    }
+
+.navbar-nav .nav-item .nav-link {
+    @include items-style;
+    color: $dark;
+    text-decoration: none;
+
+    &:hover{
+        color: $color-secundari;
+    }
+
+}
+
+
+
+.btn-outline-success {
+    @include items-style;
+    border: 1px solid $color-secundari;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: $color-secundari;
+    transition: background-color 0.3s;
+    padding: $btn-padding;
+
+    &:hover {
+        background-color: transparent;
+        border: 1px solid $color-secundari;
+        color: $color-secundari;
+        padding: $btn-padding + 0.1rem;
+    }
+}
+
+// .btn-outline:hover {
+//     background-color: #28a745;
+//     color: #fff;
+// }
+
+
+
+// $color-principal: #5265E1;
+// $color-secundari: #FA5959;
+
+// body {
+//     font-family: 'Poppins', sans-serif;
+//   }
+
+
+// // Header
+
+// .container-fluid{
+//     margin: 3rem 5rem;
+// }
+
+// @mixin items-style{
+//     margin-left: 3rem;
+//     font-size: 1rem;
+//     font-weight: 500;
+// }
+
+// .navbar-nav .nav-item .nav-link .btn {
+//     @include items-style;
+// }
+
+
+
+
+
+
