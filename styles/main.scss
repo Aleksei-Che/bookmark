@@ -21,7 +21,7 @@ body {
 }
 
 .container-fluid{
-        margin: 2rem 5.5rem;
+        margin: 2rem 8rem 4rem 5rem;
     }
 
 .navbar-nav .nav-item .nav-link {
@@ -34,8 +34,6 @@ body {
     }
 
 }
-
-
 
 .btn-outline-success {
     @include items-style;
@@ -55,39 +53,71 @@ body {
     }
 }
 
-// .btn-outline:hover {
-//     background-color: #28a745;
-//     color: #fff;
-// }
+.display-2{
+    font-size: 2.5rem;
+    font-weight: 550;
+    width: 400px;
+    padding-bottom: 2rem;
+}
+.description{
+    color: $secondary;
+    font-size: 1rem; 
+    display: block;
+    padding-bottom: 2rem;
+    
+}
+.section-intro {
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        // padding: 3rem 1.5rem;
+    }
 
+    .intro-text {
+        max-width: 500px;
+        padding-bottom: 2rem;
+    }
 
+    .intro-img img {
+        max-width: 100%;
+        height: auto;
+    }
+    .btn-container {
+        display: flex;
+        gap: 1rem;
+    }
+}
 
-// $color-principal: #5265E1;
-// $color-secundari: #FA5959;
+@mixin btn-intro{
+    padding: $btn-padding;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+.btn-chrome{
+    @include btn-intro;
+    background-color: $color-principal;
+    border-color: $color-principal;
+    color: white;
 
-// body {
-//     font-family: 'Poppins', sans-serif;
-//   }
+    &:hover{
+        background-color: transparent;
+        border-color: $color-principal;
+        color: $color-principal
+    }
+}
+.btn-firefox{
+    @include btn-intro;
+    background-color: whitesmoke;
+    color: $dark;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 
-
-// // Header
-
-// .container-fluid{
-//     margin: 3rem 5rem;
-// }
-
-// @mixin items-style{
-//     margin-left: 3rem;
-//     font-size: 1rem;
-//     font-weight: 500;
-// }
-
-// .navbar-nav .nav-item .nav-link .btn {
-//     @include items-style;
-// }
-
-
-
-
-
-
+    &:hover{
+        background-color: transparent;
+        border-color: $dark;
+    }
+    
+    
+}
