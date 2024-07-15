@@ -160,13 +160,12 @@ body {
 
 }
 
-
 .custom-underline {
     position: relative;
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 1.5rem 0; // Добавляем паддинг
+    padding: 1.5rem 0; 
 
     .nav-link {
         position: relative;
@@ -176,7 +175,7 @@ body {
         &::after {
             content: '';
             position: absolute;
-            bottom: -10px; // Опускаем подчеркивание до уровня линии hr
+            bottom: -10px; 
             left: 0;
             width: 0;
             height: 3px;
@@ -185,22 +184,14 @@ body {
         }
 
         &::after {
-            background-color: $color-secundari; // Цвет подчеркивания для активного элемента
+            background-color: $color-secundari; 
         }
 
         &.active::after {
-            width: 100%; // Длина линии для активного элемента
+            width: 100%; 
         }
     }
 }
-
-// .underline {
-//     width: 100%;
-//     height: 2px;
-//     background-color: $color-principal;
-//     position: relative;
-//     // top: -2px; 
-// }
 
 .img-tab {
     max-width: 100%;
@@ -234,3 +225,55 @@ body {
     background-color: $color-principal;
     margin-left: 5rem;
 }
+
+.card-style{
+    background: white;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    .card-header,
+    .card-body,
+    .card-footer {
+        border: none; 
+}
+}
+
+.btn-outline-card{
+    @include items-style;
+    @include btn-login($color-principal, $color-principal, transparent, $color-principal, $color-principal);
+    background-color: $color-principal;
+    // margin-left: 5rem;
+}
+
+.img-padding{
+    padding: 2rem 1rem;
+}
+.card-narrow{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.img-full-width{
+    width: 100%;
+    height: auto;
+}
+
+.btn-outline-faqs {
+    @include items-style;
+    @include btn-login($color-principal, $color-principal, transparent, $color-principal, $color-principal);
+    background-color: $color-principal;
+}
+
+.accordion-button:not(.collapsed)::after {
+    color: $color-secundari;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background-color: transparent !important; 
+    border: none !important;
+
+  }
+  
+  
+  
+  
