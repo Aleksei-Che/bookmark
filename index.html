@@ -35,21 +35,97 @@
           </nav>
     </header>
     <section class="section-intro">
-      <div class="container d-flex flex-row">
-        <div class="intro-text px-4 ">
-          <h1 class="display-2">A Simple Bookmark Manager</h1>
-          <p class="description">A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
-          <div class="btn-container">
-            <button type="button" class=" btn btn-chrome">Get it on Chrome</button>
-            <button type="button" class="btn btn-firefox">Get it in Firefox</button>
+      <div class="container">
+        <div class="row align-items-center reverse">
+          <div class="col-lg-6 col-md-6  intro-text px-4">
+            <h1 class="display-2">A Simple Bookmark Manager</h1>
+            <p class="description">A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+            <div class="btn-container">
+              <button type="button" class=" btn btn-chrome">Get it on Chrome</button>
+              <button type="button" class="btn btn-firefox">Get it in Firefox</button>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 intro-img">
+            <img src="Img/illustration-hero.svg" alt="Bookmark">
           </div>
         </div>
-        <div class="intro-img">
-          <img src="Img/illustration-hero.svg" alt="Bookmark">
-        </div>
-
       </div>
     </section>
-    
+
+    <section class="features">
+      <div class="container d-flex flex-column align-items-center justify-content-center">
+        <div class="row">
+          <div class="col text-center">
+            <h2 class="display-7">Features</h2>
+            <p class="info-text">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+          </div>
+        </div>
+        
+
+        <div class="container">
+          <div class="row">
+
+            <div class="col-ms-12">
+               <ul class="nav custom-underline d-flex flex-column flex-md-row align-items-center justify-content-center">
+                 <li class="nav-item custom-item">
+                   <a class="nav-link active" data-bs-toggle="tab" href="#menu1">Simple Bookmarking</a>
+                 </li>
+                 <li class="nav-item custom-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#menu2">Speedy Searching</a>
+                 </li>
+                 <li class="nav-item custom-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#menu3">Easy Sharing</a> 
+                 </li>
+               </ul>
+            </div>
+            <!-- <hr class="underline"> -->
+          </div>
+        </div>
+
+        <div class="tab-content">
+          <div id="menu1" class="container tab-pane active"><br>
+            <div class="row align-items-center">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <img class="img-tab" src="Img/illustration-features-tab-1.svg" alt="">
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <h3 class="titulo-tab">Bookmark in one click</h3>
+                <p class="text-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="btn btn-outline-tab">More Info</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="menu2" class="container tab-pane fade"><br>
+            <div class="row align-items-center">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <img class="img-tab" src="Img/illustration-features-tab-2.svg" alt="">
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <h3 class="titulo-tab">Search with maxim speed</h3>
+                <p class="text-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="btn btn-outline-tab">More Info</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="menu3" class="container tab-pane fade"><br>
+            <div class="row align-items-center">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <img class="img-tab" src="Img/illustration-features-tab-3.svg" alt="">
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <h3 class="titulo-tab">Flexible sharing options</h3>
+                <p class="text-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="btn btn-outline-tab">More Info</button>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </section>
+  
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  
 </body>
 </html>

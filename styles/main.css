@@ -11975,7 +11975,7 @@ body {
 }
 
 .navbar-nav .nav-item .nav-link {
-  margin-left: 3rem;
+  margin-left: 2rem;
   font-size: 0.7rem;
   color: #212529;
   text-decoration: none;
@@ -11992,7 +11992,7 @@ body {
   padding: 5px 10px;
   border-radius: 5px;
   background-color: #FA5959;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   padding: 0.5rem 2rem;
 }
 .btn-outline-success:hover {
@@ -12000,6 +12000,12 @@ body {
   border: 1px solid #FA5959;
   color: #FA5959;
   padding: 0.5rem 2rem0.1rem;
+}
+
+@media (max-width: 768px) {
+  .row.reverse {
+    flex-direction: column-reverse;
+  }
 }
 
 .display-2 {
@@ -12012,23 +12018,25 @@ body {
 .description {
   color: #6c757d;
   font-size: 1rem;
+  font-weight: 300;
   display: block;
   padding-bottom: 2rem;
+  max-width: 550px;
+  max-width: 500px;
 }
 
 .section-intro .container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.section-intro .intro-text {
-  max-width: 500px;
+  padding-top: 2rem;
   padding-bottom: 2rem;
 }
 .section-intro .intro-img img {
   max-width: 100%;
   height: auto;
+}
+@media (max-width: 768px) {
+  .section-intro .intro-img {
+    padding-top: 2rem;
+  }
 }
 .section-intro .btn-container {
   display: flex;
@@ -12062,4 +12070,112 @@ body {
 .btn-firefox:hover {
   background-color: transparent;
   border-color: #212529;
+}
+
+.info-text {
+  color: #6c757d;
+  font-size: 1rem;
+  font-weight: 300;
+  display: block;
+  padding-bottom: 2rem;
+  max-width: 550px;
+  text-align: center;
+}
+
+.custom-item .nav-link {
+  margin-left: 2rem;
+  font-size: 0.7rem;
+  color: #212529;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.custom-item .nav-link:hover {
+  color: #FA5959;
+}
+.custom-item .nav-link.active {
+  text-decoration: none;
+  font-weight: normal;
+  color: #FA5959;
+}
+
+.custom-underline {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 1.5rem 0;
+}
+.custom-underline .nav-link {
+  position: relative;
+  padding-bottom: 10px;
+}
+.custom-underline .nav-link::before, .custom-underline .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: transparent;
+  transition: width 0.3s;
+}
+.custom-underline .nav-link::after {
+  background-color: #FA5959;
+}
+.custom-underline .nav-link.active::after {
+  width: 100%;
+}
+
+.img-tab {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .img-tab {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.titulo-tab {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.text-tab {
+  color: #6c757d;
+  font-size: 1rem;
+  font-weight: 300;
+  display: block;
+  padding-bottom: 2rem;
+  max-width: 550px;
+}
+
+.titulo-tab {
+  padding-left: 5rem;
+}
+
+.text-tab {
+  padding-left: 5rem;
+}
+
+.btn-outline-tab {
+  margin-left: 3rem;
+  font-size: 0.7rem;
+  border: 1px solid #5265E1;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #5265E1;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  padding: 0.5rem 2rem;
+  background-color: #5265E1;
+  margin-left: 5rem;
+}
+.btn-outline-tab:hover {
+  background-color: transparent;
+  border: 1px solid #5265E1;
+  color: #5265E1;
+  padding: 0.5rem 2rem0.1rem;
 }/*# sourceMappingURL=main.css.map */
