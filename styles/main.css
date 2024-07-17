@@ -11966,11 +11966,16 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
 
-.container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+.container-navbar {
   margin: 2rem 8rem 4rem 5rem;
 }
 
@@ -12025,22 +12030,24 @@ body {
   max-width: 500px;
 }
 
-.section-intro .container {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.rectangle {
+  width: 600px;
+  height: 200px;
+  background-color: #5265E1;
+  display: block;
+  margin-left: auto;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  position: relative;
 }
-.section-intro .intro-img img {
-  max-width: 100%;
-  height: auto;
-}
-@media (max-width: 768px) {
-  .section-intro .intro-img {
-    padding-top: 2rem;
-  }
-}
-.section-intro .btn-container {
-  display: flex;
-  gap: 1rem;
+
+.image img {
+  position: absolute;
+  top: -30px; /* Настройка для сдвига вверх */
+  left: -50px; /* Настройка для сдвига влево */
+  width: 500px; /* Примерная ширина изображения */
+  height: auto; /* Сохраняем пропорции */
+  z-index: 10; /* Убедимся, что изображение поверх всех элементов */
 }
 
 .btn-chrome {
@@ -12180,6 +12187,14 @@ body {
   padding: 0.5rem 2rem0.1rem;
 }
 
+.section-intro {
+  margin-top: 20px; /* Примерный верхний отступ */
+}
+
+.descargas {
+  margin-top: 40px; /* Верхний отступ для секции descargas */
+}
+
 .card-style {
   background: white;
   border: none;
@@ -12191,23 +12206,30 @@ body {
   border: none;
 }
 
+.card-chrome {
+  position: relative;
+  top: 2rem;
+}
+
+.card-opera {
+  position: relative;
+  top: 4rem;
+}
+
 .btn-outline-card {
-  margin-left: 3rem;
-  font-size: 0.7rem;
-  border: 1px solid #5265E1;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  background-color: #5265E1;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   padding: 0.5rem 2rem;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
   background-color: #5265E1;
+  border-color: #5265E1;
+  color: white;
+  padding: 0.75rem 1.5rem;
 }
 .btn-outline-card:hover {
-  background-color: transparent;
-  border: 1px solid #5265E1;
+  background-color: white;
   color: #5265E1;
-  padding: 0.5rem 2rem0.1rem;
+  border-color: #5265E1;
 }
 
 .img-padding {
@@ -12243,11 +12265,53 @@ body {
   padding: 0.5rem 2rem0.1rem;
 }
 
-.accordion-button:not(.collapsed)::after {
-  color: #FA5959;
+.accordion-button::after {
+  content: "";
+  background-image: url("Img/icon-arrow.svg");
 }
 
-.accordion-button:not(.collapsed) {
-  background-color: transparent !important;
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(180deg);
+}
+
+.accordion-body {
+  background-color: white !important;
   border: none !important;
+}
+
+.form-container {
+  height: 400px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #5265E1;
+}
+
+.txt-sm-form {
+  font-size: small;
+  font-weight: 600;
+}
+
+.btn-forma {
+  @inclide;
+}
+
+.footer {
+  background-color: MidnightBlue;
+}
+.footer .footer-navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+.footer .footer-navbar .navbar-nav .nav-link {
+  font-size: 1rem;
+  color: Lavender;
+  padding: 0.5rem 1rem;
+}
+.footer .footer-navbar .navbar-nav .nav-link:hover {
+  color: #FA5959;
+}
+.footer .footer-navbar .navbar-nav .nav-link img.social-icon {
+  width: 1.5rem;
+  height: auto;
 }/*# sourceMappingURL=main.css.map */

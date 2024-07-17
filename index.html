@@ -1,254 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bookmark</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmark</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img src="Img/logo-bookmark.svg" alt="Bookmark logo">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">FEATURES</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">PRICING</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACT</a>
-                  </li>
-                </ul>
-                <button class="btn btn-outline-success">LOGIN</button>
-              </div>
-            </div>
-          </nav>
-    </header>
-    <section class="section-intro">
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container container-navbar">
+        <a class="navbar-brand" href="#">
+          <img src="Img/logo-bookmark.svg" alt="Bookmark logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">FEATURES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PRICING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+          </ul>
+          <button class="btn btn-outline-success">LOGIN</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="section-intro">
+    <div class="container container-intro">
+      <div class="row align-items-center reverse">
+        <div class="col-lg-6 col-md-6 col-sm-12 intro-text">
+          <h1 class="display-2">A Simple Bookmark Manager</h1>
+          <p class="description">A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+          <div class="btn-container">
+            <button type="button" class="btn btn-chrome">Get it on Chrome</button>
+            <button type="button" class="btn btn-firefox">Get it in Firefox</button>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 intro img">
+          <img src="Img/illustration-hero.svg" alt="">
+        </div>
+  </section>
+  <section class="features">
+    <div class="container d-flex flex-column align-items-center justify-content-center">
+      <div class="row">
+        <div class="col text-center">
+          <h2 class="display-7">Features</h2>
+          <p class="info-text">Our aim is to make it quick and easy for you to access your favourite websites. Your
+            bookmarks sync between your devices so you can access them on the go.</p>
+        </div>
+      </div>
+
+
       <div class="container">
-        <div class="row align-items-center reverse">
-          <div class="col-lg-6 col-md-6  intro-text px-4">
-            <h1 class="display-2">A Simple Bookmark Manager</h1>
-            <p class="description">A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
-            <div class="btn-container">
-              <button type="button" class=" btn btn-chrome">Get it on Chrome</button>
-              <button type="button" class="btn btn-firefox">Get it in Firefox</button>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 intro-img">
-            <img src="Img/illustration-hero.svg" alt="Bookmark">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="features">
-      <div class="container d-flex flex-column align-items-center justify-content-center">
         <div class="row">
-          <div class="col text-center">
-            <h2 class="display-7">Features</h2>
-            <p class="info-text">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+
+          <div class="col-ms-12">
+            <ul class="nav custom-underline d-flex flex-column flex-md-row align-items-center justify-content-center">
+              <li class="nav-item custom-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#menu1">Simple Bookmarking</a>
+              </li>
+              <li class="nav-item custom-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#menu2">Speedy Searching</a>
+              </li>
+              <li class="nav-item custom-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#menu3">Easy Sharing</a>
+              </li>
+            </ul>
+          </div>
+          <!-- <hr class="underline"> -->
+        </div>
+      </div>
+
+      <div class="tab-content">
+        <div id="menu1" class="container tab-pane active"><br>
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <img class="img-tab" src="Img/illustration-features-tab-1.svg" alt="">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <h3 class="titulo-tab">Bookmark in one click</h3>
+              <p class="text-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.</p>
+              <button class="btn btn-outline-tab">More Info</button>
+            </div>
           </div>
         </div>
-        
 
-        <div class="container">
-          <div class="row">
-
-            <div class="col-ms-12">
-               <ul class="nav custom-underline d-flex flex-column flex-md-row align-items-center justify-content-center">
-                 <li class="nav-item custom-item">
-                   <a class="nav-link active" data-bs-toggle="tab" href="#menu1">Simple Bookmarking</a>
-                 </li>
-                 <li class="nav-item custom-item">
-                  <a class="nav-link" data-bs-toggle="tab" href="#menu2">Speedy Searching</a>
-                 </li>
-                 <li class="nav-item custom-item">
-                  <a class="nav-link" data-bs-toggle="tab" href="#menu3">Easy Sharing</a> 
-                 </li>
-               </ul>
+        <div id="menu2" class="container tab-pane fade"><br>
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <img class="img-tab" src="Img/illustration-features-tab-2.svg" alt="">
             </div>
-            <!-- <hr class="underline"> -->
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <h3 class="titulo-tab">Search with maxim speed</h3>
+              <p class="text-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.</p>
+              <button class="btn btn-outline-tab">More Info</button>
+            </div>
           </div>
         </div>
 
-        <div class="tab-content">
-          <div id="menu1" class="container tab-pane active"><br>
-            <div class="row align-items-center">
-              <div class="col-lg-6 col-md-6 col-sm-12">
-                <img class="img-tab" src="Img/illustration-features-tab-1.svg" alt="">
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-12">
-                <h3 class="titulo-tab">Bookmark in one click</h3>
-                <p class="text-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <button class="btn btn-outline-tab">More Info</button>
-              </div>
+        <div id="menu3" class="container tab-pane fade"><br>
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <img class="img-tab" src="Img/illustration-features-tab-3.svg" alt="">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <h3 class="titulo-tab">Flexible sharing options</h3>
+              <p class="text-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.</p>
+              <button class="btn btn-outline-tab">More Info</button>
             </div>
           </div>
-
-          <div id="menu2" class="container tab-pane fade"><br>
-            <div class="row align-items-center">
-              <div class="col-lg-6 col-md-6 col-sm-12">
-                <img class="img-tab" src="Img/illustration-features-tab-2.svg" alt="">
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-12">
-                <h3 class="titulo-tab">Search with maxim speed</h3>
-                <p class="text-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <button class="btn btn-outline-tab">More Info</button>
-              </div>
-            </div>
-          </div>
-
-          <div id="menu3" class="container tab-pane fade"><br>
-            <div class="row align-items-center">
-              <div class="col-lg-6 col-md-6 col-sm-12">
-                <img class="img-tab" src="Img/illustration-features-tab-3.svg" alt="">
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-12">
-                <h3 class="titulo-tab">Flexible sharing options</h3>
-                <p class="text-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <button class="btn btn-outline-tab">More Info</button>
-              </div>
-            </div>
-          </div>
-        </div>  
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="descargas">
-      <div class="container d-flex flex-column align-items-center justify-content-center mt-5">
-          <div class="row">
-              <div class="col text-center">
-                  <h2 class="display-7">Download the extension</h2>
-                  <p class="info-text">We've got more browsers in the pipeline. Please do let us know if you've got a favorite you'd like us to prioritize.</p>
-              </div>
-          </div>
-  
-          
-          <div class="row mt-3">
-              
-              <div class="col-lg-4 col-md-6 mb-3 d-flex mt-0">
-                  <div class="card card-narrow card-style">
-                      <div class="card-header text-center bg-white">
-                          <img class="img-padding" src="Img/logo-chrome.svg" alt="Download Chrome">
-                      </div>
-                      <div class="card-body text-center">
-                          <h5><small>Add to Chrome</small></h5>
-                          <p class="text-muted">Minimum version 63</p>
-                          <img class="img-full-width" src="Img/bg-dots.svg" alt="Dots">
-                      </div>
-                      <div class="card-footer bg-white">
-                          <button class="btn btn-outline-card">Add & Install Extension</button>
-                      </div>
-                  </div>
-              </div>
-              
-              <div class="col-lg-4 col-md-6 mb-3 d-flex justify-content-center mt-3">
-                  <div class="card card-narrow card-style">
-                      <div class="card-header text-center bg-white">
-                          <img class="img-padding"  src="Img/logo-firefox.svg" alt="Download Firefox">
-                      </div>
-                      <div class="card-body text-center">
-                          <h5><small>Add to Firefox</small></h5>
-                          <p class="text-muted">Minimum version 55</p>
-                          <img class="img-full-width" src="Img/bg-dots.svg" alt="Dots">
-                      </div>
-                      <div class="card-footer bg-white">
-                          <button class="btn btn-outline-card">Add & Install Extension</button>
-                      </div>
-                  </div>
-              </div>
-              
-              <div class="col-lg-4 col-md-6 mb-3 d-flex mt-5">
-                  <div class="card card-narrow card-style">
-                      <div class="card-header text-center bg-white">
-                          <img class="img-padding" src="Img/logo-opera.svg" alt="Download Opera">
-                      </div>
-                      <div class="card-body text-center">
-                          <h5><small>Add to Opera</small></h5>
-                          <p class="text-muted">Minimum version 46</p>
-                          <img class="img-full-width" src="Img/bg-dots.svg" alt="Dots">
-                      </div>
-                      <div class="card-footer bg-white">
-                          <button class="btn btn-outline-card">Add & Install Extension</button>
-                      </div>
-                  </div>
-              </div>
-          </div>
+  <section class="descargas">
+    <div class="container d-flex flex-column align-items-center justify-content-center mt-4">
+      <div class="row">
+        <div class="col text-center">
+          <h2 class="display-7">Download the extension</h2>
+          <p class="info-text">We've got more browsers in the pipeline. Please do let us know if you've got a favorite
+            you'd like us to prioritize.</p>
+        </div>
       </div>
+
+
+      <div class="row mt-3">
+
+        <div class="col-lg-4 col-md-6 mb-3 d-flex">
+          <div class="card card-narrow card-style">
+            <div class="card-header text-center bg-white">
+              <img class="img-padding" src="Img/logo-chrome.svg" alt="Download Chrome">
+            </div>
+            <div class="card-body text-center">
+              <h5><small>Add to Chrome</small></h5>
+              <p class="text-muted">Minimum version 63</p>
+              <img class="img-full-width" src="Img/bg-dots.svg" alt="Dots">
+            </div>
+            <div class="card-footer bg-white">
+              <button class="btn btn-outline-card">Add & Install Extension</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-3 d-flex justify-content-center">
+          <div class="card card-narrow card-style card-chrome">
+            <div class="card-header text-center bg-white">
+              <img class="img-padding" src="Img/logo-firefox.svg" alt="Download Firefox">
+            </div>
+            <div class="card-body text-center">
+              <h5><small>Add to Firefox</small></h5>
+              <p class="text-muted">Minimum version 55</p>
+              <img class="img-full-width" src="Img/bg-dots.svg" alt="Dots">
+            </div>
+            <div class="card-footer bg-white">
+              <button class="btn btn-outline-card">Add & Install Extension</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-3 ">
+          <div class="card card-narrow card-style card-opera">
+            <div class="card-header text-center bg-white">
+              <img class="img-padding" src="Img/logo-opera.svg" alt="Download Opera">
+            </div>
+            <div class="card-body text-center">
+              <h5><small>Add to Opera</small></h5>
+              <p class="text-muted">Minimum version 46</p>
+              <img class="img-full-width" src="Img/bg-dots.svg" alt="Dots">
+            </div>
+            <div class="card-footer bg-white">
+              <button class="btn btn-outline-card">Add & Install Extension</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="container faqs mt-5">
     <div class="container">
       <div class="container d-flex flex-column align-items-center justify-content-center ">
         <div class="row">
-            <div class="col-12">
-                <h2 class="display-7 text-center">Frequently Asked Questions</h2>
-                <p class="info-text">Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        What is bookmark?
-                      </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        How can I request a new browser?
-                      </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        Is there a mobile app?
-                      </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        What about other Chromium browsers?
-                      </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                    </div>
-                  </div>
+          <div class="col-12">
+            <h2 class="display-7 text-center">Frequently Asked Questions</h2>
+            <p class="info-text">Here are some of our FAQs. If you have any other questions you'd like answered please
+              feel free to email us.</p>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    What is bookmark?
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                    the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
                 </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    How can I request a new browser?
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                    the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine
+                    this being filled with some actual content.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Is there a mobile app?
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                    the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                    exciting happening here in terms of content, but just filling up the space to make it look, at least
+                    at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    What about other Chromium browsers?
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                    the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                    exciting happening here in terms of content, but just filling up the space to make it look, at least
+                    at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
             </div>
-            
-        </div>
-          <div class="row">
-            <button class="btn btn-outline-faqs">More Info</button>
           </div>
+
+        </div>
+        <div class="row">
+          <button class="btn btn-outline-faqs">More Info</button>
+        </div>
+      </div>
+  </section>
+
+  <section class="forma">
+    <div class="container-fluid form-container mt-4">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-6">
+          <div class="text-white text-center px-5 form">
+            <p class="txt-sm-form">35.000+ ALREADY JOINED</p>
+            <h1>Stay up-to-date with what we're doing</h1>
+            <form>
+              <input type="text" class="form-control mt-3" placeholder="Enter your email adress">
+            </form>
+            <button type="submit" class="btn btn-forma">Contact Us</button>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="container-fluid"> -->
+      <!-- <nav class="navbar navbar-expand-lg footer-navbar">
+          <div class="container container-navbar">
+            <a class="navbar-brand" href="#">
+              <img src="Img/Diseño sin título.svg" alt="Bookmark logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleFooterNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleFooterNavbar">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">FEATURES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">PRICING</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CONTACT</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><img src="Img/icon-facebook.svg" alt="Facebook" class="social-icon"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><img src="Img/icon-twitter.svg" alt="Twitter" class="social-icon"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav> -->
+      <!-- </div> -->
     </div>
   </section>
-      
-      
 
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>

@@ -2,7 +2,6 @@
 // Import Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-// styles/main.scss
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
@@ -42,18 +41,6 @@ $btn-padding: 0.5rem 2rem;
     }
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-}
-
-.container-fluid{
-        margin: 2rem 8rem 4rem 5rem;
-    }
-
-.navbar-nav .nav-item .nav-link {
-    @include nav-item-style;
-}
-
 @mixin btn-login($border-color, $bg-color, $hover-bg-color, $hover-border-color, $hover-color) {
     border: 1px solid $border-color;
     color: white;
@@ -72,16 +59,35 @@ body {
 }
 
 
+// body, .container-fluid {
+//     margin: 0;
+//     padding: 0;
+// }
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-navbar{
+        margin: 2rem 8rem 4rem 5rem;
+    }
+
+.navbar-nav .nav-item .nav-link {
+    @include nav-item-style;
+}
+
+
 .btn-outline-success {
     @include items-style;
     @include btn-login($color-secundari, $color-secundari, transparent, $color-secundari, $color-secundari);    
 }
+
 
 .row.reverse {
     @media (max-width: 768px) {
         flex-direction: column-reverse;
     }
 }
+
 
 .display-2{
     font-size: 2.5rem;
@@ -94,30 +100,6 @@ body {
     max-width: 500px;
    
 }
-
-.section-intro {
-    .container {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
-
-    .intro-img {
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        @media (max-width: 768px) {
-            padding-top: 2rem;
-        }
-    }
-
-    .btn-container {
-        display: flex;
-        gap: 1rem;
-    }
-}
-
 
 .btn-chrome{
     @include btn-intro;
@@ -226,6 +208,14 @@ body {
     margin-left: 5rem;
 }
 
+.section-intro {
+    margin-top: 20px; 
+}
+
+.descargas {
+    margin-top: 40px; 
+}
+
 .card-style{
     background: white;
     border: none;
@@ -238,11 +228,27 @@ body {
 }
 }
 
-.btn-outline-card{
-    @include items-style;
-    @include btn-login($color-principal, $color-principal, transparent, $color-principal, $color-principal);
+.card-chrome{
+    position: relative;
+    top: 2rem;
+}
+.card-opera{
+    position: relative;
+    top: 4rem;
+}
+
+.btn-outline-card {
+    @include btn-intro;
     background-color: $color-principal;
-    // margin-left: 5rem;
+    border-color: $color-principal;
+    color: white;
+    padding: 0.75rem 1.5rem; // Увеличим внутренние отступы для более приятного внешнего вида
+
+    &:hover {
+        background-color: white;
+        color: $color-principal;
+        border-color: $color-principal;
+    }
 }
 
 .img-padding{
@@ -264,16 +270,63 @@ body {
     background-color: $color-principal;
 }
 
-.accordion-button:not(.collapsed)::after {
-    color: $color-secundari;
-  }
-  
-  .accordion-button:not(.collapsed) {
-    background-color: transparent !important; 
-    border: none !important;
 
+.accordion-body {
+    background-color: white !important; 
+    border: none !important; 
+}
+
+.form-container {
+    height: 400px; 
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+    background-color: $color-principal;
+}
+
+
+.txt-sm-form{
+    font-size: small;
+    font-weight: 600;
+}
+
+.btn-forma{
+    @include btn-intro;
+    background-color: $color-secundary;
+    border-color: $color-secundari;
+    color: white;
+    padding: 0.75rem 1.5rem; 
+
+    &:hover {
+        background-color: white;
+        color: $color-principal;
+        border-color: $color-secundari;
+    }
+}
+
+.footer {
+    background-color: MidnightBlue;
+    // padding-top: 2rem;
+    // padding-bottom: 2rem;
+    
+    .footer-navbar .navbar-brand {
+      display: flex;
+      align-items: center;
+      margin-right: 2rem;
+    }
+  
+    .footer-navbar .navbar-nav .nav-link {
+      font-size: 1rem;
+      color: Lavender;
+      padding: 0.5rem 1rem;
+  
+      &:hover {
+        color: $color-secundari;
+      }
+    }
+  
+    .footer-navbar .navbar-nav .nav-link img.social-icon {
+      width: 1.5rem; 
+      height: auto;
+    }
   }
-  
-  
-  
   
